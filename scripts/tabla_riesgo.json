@@ -1,0 +1,101 @@
+nomenclatura:
+idioma
+
+
+- RESULTADO DE RIESGO //  RES_WAR
+- CALIFICACION DE RIESGO // CAL_WARN
+- TIPO DE RIESGO // TYP_WAR
+- CALIFICACION DE RIESGO GLOBAL // CAL_WAR_GLO
+- OCUPACION // OCUP
+- GIRO // GIR
+
+
+id tipo objeto // 1222s-2331wws2ss2-23232ss22
+
+[
+    //- RESULTADO DE RIESGO //  RES_WAR
+    {
+        "PK": "RES_WAR#<res_war_id>", // RES_WAR#222s-2331wws2ss2-23232ss22
+        "SK": "#METADATA#<res_war_id>", // #METADATA#222s-2331wws2ss2-23232ss22
+        "name": "RIESGO RESTRINGIDO",
+        "res_war_id": "222s-2331wws2ss2-23232ss22",
+        "option": "TAS#RIES", //secondary_index
+        "type": "S", //secondary_index
+        "created_at": "2017-12-12 00:0000", // auditoria
+        "updated_at": "2017-12-12 00:0000", // auditoria
+        "deleted_at": "2017-12-12 00:0000" // auditoria
+    },
+    //  - TIPO DE RIESGO // TYP_WAR
+    {
+        "PK": "TIR#987",
+        "SK": "#METADATA#987",
+        "name": "SERVICIO",
+        "tir_id": "987",
+        "type": "N",
+        "option": "TAS#RIES",
+        "created_at": "2017-12-12 00:0000",
+        "updated_at": "2017-12-12 00:0000",
+        "deleted_at": "2017-12-12 00:0000"
+    },
+    {
+        "PK": "CAG#098",
+        "SK": "#METADATA#098",
+        "name": "IV",
+        "option": "TAS#RIES",
+        "created_at": "2017-12-12 00:0000",
+        "updated_at": "2017-12-12 00:0000",
+        "deleted_at": "2017-12-12 00:0000"
+    },
+    {
+        "PK": "CAI#987",
+        "SK": "#METADATA#987",
+        "name": "I",
+        "created_at": "2017-12-12 00:0000",
+        "updated_at": "2017-12-12 00:0000",
+        "deleted_at": "2017-12-12 00:0000"
+    },
+    {
+        "PK": "GIR#982",
+        "SK": "#METADATA#982",
+        "name": "ACERO",
+        "gir_id": "982",
+        "created_at": "2017-12-12 00:0000",
+        "updated_at": "2017-12-12 00:0000",
+        "deleted_at": "2017-12-12 00:0000"
+    },
+    {
+        "PK": "OCU#123",
+        "SK": "#METADATA#123",
+        "name": "OFICINA",
+        "ocu_id": "123",
+        "created_at": "2017-12-12 00:0000",
+        "updated_at": "2017-12-12 00:0000",
+        "deleted_at": "2017-12-12 00:0000"
+    },
+    {
+        "PK": "GIR#982",
+        "SK": "OCU#123",
+        "gir_id": "982",
+        "ocu_id": "123",
+        "rer_id": "982",
+        "tir_id": "987",
+        "version": "v_1.1",
+        "created_at": "2017-12-12 00:0000",
+        "updated_at": "2017-12-12 00:0000",
+        "deleted_at": "2017-12-12 00:0000"
+    },
+    //tabla de muchos muchos 
+    {
+        "PK": "GIR#982",
+        "SK": "OCU#123",
+        "gir_id": "982",
+        "ocu_id": "123",
+        "rer_id": "982",
+        "tir_id": "987",
+        "dat_123": "23",
+        "version": "v_1.2",
+        "created_at": "2017-12-12 00:0000",
+        "updated_at": "2017-12-12 00:0000",
+        "deleted_at": "2017-12-12 00:0000"
+    }
+]

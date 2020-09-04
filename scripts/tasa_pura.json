@@ -1,0 +1,61 @@
+
+- RAMO //  RAMO
+- TIPO DE RIESGO // TYP_WAR
+- RANGO DE SUMA ASEGURADA (SA) // RA_SUM_ASE
+- CALIFICACION // CAL
+- TASA PURA // TYT
+
+
+id tipo objeto // 1222s-2331wws2ss2-23232ss22
+
+[
+    //-  RAMO //  RAMO
+    {
+        "PK": "RAMO#<ramo_id>", // RES_WAR#222s-2331wws2ss2-23232ss22
+        "SK": "#METADATA#<ramo_id>", // #METADATA#222s-2331wws2ss2-23232ss22
+        "name": "ROMA SLC",
+        "ramo_id": "222s-2331wws2ss2-23232ss22",
+        "option": "TAS", //secondary_index
+        "type": "S", //secondary_index
+        "created_at": "2017-12-12 00:0000", // auditoria
+        "updated_at": "2017-12-12 00:0000", // auditoria
+        "deleted_at": "2017-12-12 00:0000" // auditoria
+    },
+    //  - RANGO DE SUMA ASEGURADA (SA) // RA_SUM_ASE  RAMO 1 y 2
+    {
+        "PK": "RA_SUM_ASE#987",
+        "SK": "RAMO#1#2",
+        "name": "[100K - 250K]",
+        "min": "00",
+        "max": "100",
+        "option": "TAS", //secondary_index
+        "type": "S", //secondary_index
+        "created_at": "2017-12-12 00:0000",
+        "updated_at": "2017-12-12 00:0000",
+        "deleted_at": "2017-12-12 00:0000"
+    },
+    {
+        "PK": "RA_SUM_ASE#987",
+        "SK": "RAMO#1#2",
+        "name": "<= 25000",
+        "min": "100",
+        "max": "250",
+        "option": "TAS", //secondary_index
+        "type": "S", //secondary_index
+        "created_at": "2017-12-12 00:0000",
+        "updated_at": "2017-12-12 00:0000",
+        "deleted_at": "2017-12-12 00:0000"
+    },
+    //  TASA PURA // TYT
+    {
+        "PK": "TYT#2333",
+        "SK": "RAMO#TIR#RAR#OS!1#2#4#5",
+        "value": "1.2",
+        "version": "v_1.1",
+        "option": "TAS", //secondary_index
+        "type": "N", //secondary_index
+        "created_at": "2017-12-12 00:0000",
+        "updated_at": "2017-12-12 00:0000",
+        "deleted_at": "2017-12-12 00:0000"
+    },
+]
